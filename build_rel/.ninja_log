@@ -1,0 +1,6 @@
+# ninja log v7
+9	1721	1750999655862074006	CMakeFiles/bici.dir/src/IRGenerator.cpp.o	9de5cd9ada2238ab
+1723	2662	1750999657576015354	CMakeFiles/bici.dir/src/IRInterpreter.cpp.o	e35731f7b5427e1c
+2662	2892	1750999658515532661	CMakeFiles/bici.dir/src/Lexer.cpp.o	290b1d8a68ac674a
+2892	3305	1750999658745480657	CMakeFiles/bici.dir/src/Main.cpp.o	904e724f8d95194c
+3306	3446	1750999659158955690	bici	1d986a2224f0d39

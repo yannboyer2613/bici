@@ -1,6 +1,8 @@
 #include <iostream>
 #include <cstdlib>
 #include <fstream>
+#include <exception>
+#include <vector>
 #include "IRInterpreter.hpp"
 #include "IRGenerator.hpp"
 
@@ -32,8 +34,13 @@ int main(int argc, char* argv[]) {
     IRInterpreter irInterpreter;
     IRGenerator irGenerator;
 
-    std::vector<IRInstruction> irProgram = irGenerator.GenerateIRFromRawInsts(programBuffer);
-    irInterpreter.LoadIR(irProgram);
+    try {
+        std::vector<IRInstruction> irProgram = irGenerator.GenerateIRFromRawInsts(programBuffer);
+        irInterpreter.LoadIR(irProgram);
+    } catch (std::exception& e) {
+        std::cerr << e.what() << "\n";
+        return EXIT_FAILURE;
+    }
 
     irInterpreter.Interpret();
 

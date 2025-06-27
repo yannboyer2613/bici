@@ -1,3 +1,0 @@
-/Users/yann/Documents/Programming/bici/build_rel/CMakeFiles/bici.dir
-/Users/yann/Documents/Programming/bici/build_rel/CMakeFiles/edit_cache.dir
-/Users/yann/Documents/Programming/bici/build_rel/CMakeFiles/rebuild_cache.dir

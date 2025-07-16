@@ -37,12 +37,11 @@ int main(int argc, char* argv[]) {
     try {
         std::vector<IRInstruction> irProgram = irGenerator.GenerateIRFromRawInsts(programBuffer);
         irInterpreter.LoadIR(irProgram);
+        irInterpreter.Interpret();
     } catch (std::exception& e) {
         std::cerr << e.what() << "\n";
         return EXIT_FAILURE;
     }
-
-    irInterpreter.Interpret();
 
     return EXIT_SUCCESS;
 }
